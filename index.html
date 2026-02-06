@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Rose Day My Love 🌹</title>
+
+<!-- ========================
+     STYLES
+========================= -->
+<style>
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ff6b81, #ffb6c1, #fff0f5);
+  color: #fff;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Global Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Floating Glow */
+.glow {
+  text-shadow: 0 0 10px pink, 0 0 20px hotpink;
+}
+
+/* ========================
+   HERO SECTION
+========================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* ========================
+   DOODLE TEXT
+========================= */
+.doodles {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.doodle {
+  background: rgba(255,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(255,105,180,0.6);
+}
+
+/* ========================
+   MESSAGE SECTION
+========================= */
+.message {
+  background: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 40px 25px;
+  margin: 60px auto;
+  max-width: 850px;
+  animation: slideUp 2s ease;
+  box-shadow: 0 0 25px rgba(255,20,147,0.5);
+}
+
+.message h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.message p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+/* ========================
+   GALLERY
+========================= */
+.gallery {
+  margin: 60px 0;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.photo {
+  background: rgba(255,255,255,0.2);
+  height: 220px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(255,105,180,0.6);
+  transition: transform 0.3s;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
+
+/* ========================
+   FOOTER
+========================= */
+footer {
+  padding: 25px;
+  background: rgba(255,255,255,0.15);
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+/* ========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Falling Petals */
+.petal {
+  position: fixed;
+  top: -50px;
+  font-size: 22px;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Floating Hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 18px;
+  animation: floatUp 5s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+
+  .message {
+    padding: 25px 15px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ========================
+     HERO SECTION
+========================= -->
+<section class="hero container">
+
+  <h1 class="glow">Happy Rose Day, My Love 🌹❤️💐</h1>
+
+  <p>
+    To the most beautiful soul in my universe 💖  
+    You are my sunshine, my comfort, my forever 💞
+  </p>
+
+  <!-- Graffiti Doodles -->
+  <div class="doodles">
+    <div class="doodle">💘 Forever Love</div>
+    <div class="doodle">👑 My Queen</div>
+    <div class="doodle">💑 You & Me</div>
+    <div class="doodle">❤️ Endless Love</div>
+    <div class="doodle">🌸 Soulmate</div>
+  </div>
+
+</section>
+
+<!-- ========================
+     MESSAGE SECTION
+========================= -->
+<section class="message container">
+
+  <h2 class="glow">For My Beautiful Rose 🌹💖</h2>
+
+  <p>
+    My love ❤️,<br><br>
+
+    From the moment you walked into my life, you turned every ordinary day into something magical.  
+    You filled my world with colors brighter than sunsets, warmth sweeter than spring, and love deeper than oceans 💞.<br><br>
+
+    Just like the most perfect rose in the garden, you stand out in every way — with your grace, your strength, your kindness, and your beautiful heart 🌹.  
+    You are not just my wife, you are my best friend, my peace, my inspiration, and my greatest blessing 💐.<br><br>
+
+    Thank you for loving me, believing in me, standing by me, and choosing me every single day.  
+    Thank you for making my life meaningful, my dreams possible, and my heart complete ❤️.<br><br>
+
+    If every rose in the world were gathered together, they still wouldn’t match the beauty that lives inside you.  
+    You are my miracle, my soulmate, my forever 💖.<br><br>
+
+    On this Rose Day, I promise you this —  
+    I will cherish you in every season, protect your smile, respect your dreams, and love you more with every heartbeat 💞.  
+    Today, tomorrow, and for all eternity… I am yours ❤️🌹.
+  </p>
+
+</section>
+
+<!-- ========================
+     GALLERY SECTION
+========================= -->
+<section class="gallery container">
+
+  <h2 class="glow">Our Beautiful Memories 💑📸</h2>
+
+  <div class="gallery-grid">
+
+  <div class="photo">
+    <img src="photos/pic1.jpg" alt="Memory 1">
+  </div>
+
+  <div class="photo">
+    <img src="photos/pic2.jpg" alt="Memory 2">
+  </div>
+
+  <div class="photo">
+    <img src="photos/pic3.jpg" alt="Memory 3">
+  </div>
+
+  <div class="photo">
+    <img src="photos/pic4.jpg" alt="Memory 4">
+  </div>
+
+  <div class="photo">
+    <img src="photos/pic5.jpg" alt="Memory 5">
+  </div>
+
+  <div class="photo">
+    <img src="photos/pic6.jpg" alt="Memory 6">
+  </div>
+
+</div>
+
+</section>
+
+<!-- ========================
+     FOOTER
+========================= -->
+<footer>
+  Made with Love 💖 by Your Husband | Forever Yours 🌹
+</footer>
+
+<!-- ========================
+     JAVASCRIPT
+     (Petals & Hearts Animation)
+========================= -->
+<script>
+
+/* Create Falling Rose Petals */
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.classList.add("petal");
+  petal.innerHTML = "🌹";
+
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+  document.body.appendChild(petal);
+
+  setTimeout(() => {
+    petal.remove();
+  }, 8000);
+}
+
+/* Create Floating Hearts */
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤️";
+
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (4 + Math.random() * 3) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+
+/* Run Animations */
+setInterval(createPetal, 400);
+setInterval(createHeart, 600);
+
+</script>
+
+</body>
+</html>
